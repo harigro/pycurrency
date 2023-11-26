@@ -4,7 +4,7 @@ Setiap negara yang berdaulat tentunya mempunyai mata uang dan singkatan untuk me
 ## Cara Instalasi
 Cukup mudah, hanya dengan tempel dan rekatkan di terminal
 ```bash
-pip install pycurrency
+pip install pycurrencyid
 ```
 
 ## Cara mengunakan dan contoh program
