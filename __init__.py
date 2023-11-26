@@ -1,1 +1,1 @@
-from pycurrency.mata_uang import mataUang
+from pycurrencyid.mata_uang import mataUang
