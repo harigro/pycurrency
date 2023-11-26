@@ -10,7 +10,7 @@ pip install pycurrencyid
 ## Cara mengunakan dan contoh program
 Dalam menggunakan pustaka ini pertama -tama pahami dulu program berikut.
 ```python
-from pycurrency import mataUang
+from pycurrencyid import mataUang
 import pprint
 
 
