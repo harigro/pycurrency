@@ -1,8 +1,4 @@
-from typing import Dict, List
-from collections import ChainMap
-from mata_uang import asia, eropa, australia, afrika, amerika
-import pprint
-
+from ..mata_uang import asia, eropa, australia, afrika, amerika
 
 class ISO:
     def __init__(self):
@@ -32,21 +28,3 @@ class IsoNegara:
         self.data_australia = dict(zip(negara.negara_benua_australia, iso.iso_benua_australia))
         self.data_amerika_utara = dict(zip(negara.negara_benua_amerika_utara, iso.iso_benua_amerika_utara))
         self.data_amerika_selatan = dict(zip(negara.negara_benua_amerika_selatan, iso.iso_benua_amerika_selatan))
-
-class mataUang:
-    def __init__(self):
-        iso = IsoNegara()
-        self.semua: Dict[str, str] = dict(
-            ChainMap(
-                iso.data_asia, iso.data_eropa, 
-                iso.data_australia, iso.data_afrika, 
-                iso.data_amerika_selatan, iso.data_amerika_utara
-                )
-            )
-        
-    def cari(self, iso4217: str) -> List[str]:
-        data = [k for k, v in self.semua.items() if v == iso4217.upper()]
-        if len(data) == 1: return data[0]
-        else: return data
-                
-                
