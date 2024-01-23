@@ -1,1 +1,1 @@
-from pycurrencyid.mata_uang import mataUang
+from .mata_uang import IsoNegara
