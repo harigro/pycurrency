@@ -8,21 +8,17 @@ pip install pycurrencyid
 ```
 
 ## Cara mengunakan dan contoh program
-Dalam menggunakan pustaka ini pertama -tama pahami dulu program berikut.
 ```python
-from pycurrencyid import mataUang
-import pprint
+from pycurrencyid import IsoNegara
 
 
 # ada dua fungsi utama pada kelas mataUang, semua dan cari
-data = mataUang()
+uang = IsoNegara()
 
-# untuk menampilkan semua data yang ada di pustaka ini
-pprint.pprint(data.semua, sort_dicts=False)
-
-# untuk mencari nama negara berdasarkan singkatan mata uangnya
-pprint.pprint(data.cari("idr"), sort_dicts=False)
+print(uang.data_asia)
+print(uang.data_eropa)
+print(uang.data_afrika)
+print(uang.data_australia)
+print(uang.data_amerika_utara)
+print(uang.data_amerika_selatan)
 ```
-
-## Kata Penutup
-Semoga bermanfaat dan jika tertarik dengan program ini dan lainnya, silahkan follow akun sosial media aku lainnya.
